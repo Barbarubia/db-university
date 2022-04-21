@@ -22,9 +22,9 @@ WHERE `cfu` > 10;
 
 SELECT *
 FROM `students`
-WHERE `date_of_birth` <= '1992-04-21';
+WHERE `date_of_birth` <= '1991-04-21';
 
-(NB: così seleziono anche gli studenti che compiono 30 anni oggi)
+(NB: sto selezionando gli studenti a partire da quelli che compiono oggi 31 anni)
 
 
 
