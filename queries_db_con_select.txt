@@ -27,6 +27,14 @@ WHERE `date_of_birth` <= '1991-04-21';
 (NB: sto selezionando gli studenti a partire da quelli che compiono oggi 31 anni)
 
 
+ALTERNATIVA:
+SELECT *
+FROM `students`
+WHERE FLOOR(DATEDIFF(LOCALTIME, `date_of_birth`) / 365) > 30;
+
+(NB: datediff restituisce risultato in giorni. Ho diviso per 365 per convertirlo in anni, ma non so come gestire gli anni bisestili)
+
+
 
 
 
